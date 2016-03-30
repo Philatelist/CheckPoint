@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/icon_auto"
+        android:layout_width="100dp"
+        android:contentDescription="No image"
+        android:layout_height="100dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="ФИО"
+                android:layout_toRightOf="@+id/icon_auto"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/fio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="фио"
+                android:layout_toRightOf="@+id/icon_auto"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/linear11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="ГОСНОМЕР"
+                android:layout_toRightOf="@+id/icon_auto"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/text_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="госномер"
+                android:layout_toRightOf="@+id/icon_auto"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

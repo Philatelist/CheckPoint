@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Редактирование автомобиля в каталоге"
+        android:textSize="20dp"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        />
+
+    <TextView
+        android:id="@+id/textView_old_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Старые фамилия и имя владельца"
+        />
+
+    <TextView
+        android:id="@+id/textView_old_nameAndNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите новую фамилию и имя владельца"
+        />
+
+    <EditText
+        android:id="@+id/editText_addNewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textView_newNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Введите новый госномер авто"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/editText_addNewNumber"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_editAuto"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Редактировать авто"/>
+
+
+        <Button
+            android:id="@+id/button_returnToMenuFromEdit"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Вернуться в меню"/>
+    </LinearLayout>
+
+</LinearLayout>
